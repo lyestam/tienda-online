@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Proyecto Web - Inicio</title>
+  
+  <!-- Vinculamos la hoja de estilos CSS -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN (NAVBAR)
+  =========================================== -->
+  <header class="navbar">
+    <!-- Logotipo a la izquierda -->
+    <div class="logo">
+      <a href="#">MI LOGO</a>
+    </div>
+
+    <!-- Menú de navegación (5 opciones) -->
+    <nav class="nav-links">
+      <a href="#">Inicio</a>
+      <a href="#">Nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">Portafolio</a>
+      <a href="#">Contacto</a>
+    </nav>
+
+    <!-- Botón especial para abrir/cerrar el Chatbot -->
+    <button id="btn-chatbot" class="btn-chat">💬 Chatbot</button>
+  </header>
+
+
+  <!-- ==========================================
+       ÁREA DE CONTENIDO PRINCIPAL (LIBRE)
+  =========================================== -->
+  <main class="contenido-principal">
+    <section class="hero">
+      <h1>¡Bienvenido a mi Sitio Web!</h1>
+      <p>Este es un espacio de ejemplo donde puedes colocar tus imágenes, diseños y textos de presentación.</p>
+    </section>
+
+    <section class="seccion-ejemplo">
+      <h2>Sección Libre de Contenido</h2>
+      <p>Aquí puedes agregar tus tarjetas de proyecto, banners o galerías.</p>
+    </section>
+  </main>
+
+
+  <!-- ==========================================
+       VENTANA FLOTANTE DEL CHATBOT
+  =========================================== -->
+  <div id="ventana-chatbot" class="chatbot-contenedor oculto">
+    <div class="chatbot-header">
+      <span>Asistente Virtual</span>
+      <!-- Botón para cerrar el chat -->
+      <button id="btn-cerrar-chat">&times;</button>
+    </div>
+
+    <!-- Área donde se mostrarán los mensajes -->
+    <div id="chat-mensajes" class="chatbot-body">
+      <div class="mensaje bot">¡Hola! Soy tu asistente. ¿En qué te puedo ayudar hoy?</div>
+    </div>
+
+    <!-- Campo de texto y botón para enviar -->
+    <div class="chatbot-footer">
+      <input type="text" id="chat-input" placeholder="Escribe tu mensaje aquí..." />
+      <button id="btn-enviar">Enviar</button>
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       PIE DE PÁGINA (FOOTER)
+  =========================================== -->
+  <footer class="pie-pagina">
+    <p>&copy; 2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    <div class="enlaces-legales">
+      <a href="#">Aviso de Privacidad</a> | 
+      <a href="#">Términos y Condiciones</a>
+    </div>
+  </footer>
+
+  <!-- Vinculamos el archivo JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
